@@ -56,8 +56,9 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows all the VMs to be configured at once through an ansible playbook.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
+- Install docker
+- Install pip3
+- Install docker python
 > 
     # Use apt module
     - name: Install docker.io
@@ -86,9 +87,7 @@ The playbook implements the following tasks:
         value: "262144"
         state: present
         reload: yes
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
