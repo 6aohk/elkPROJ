@@ -46,10 +46,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No              |    66.215.95.213 |
+| Jump Box | YES              |    66.215.95.213 |
 |     WEB1     |      No                |        10.0.0.6              |
 |       WEB2   |        No             |          10.0.0.6              |
-|      VNW2  |          No           |           10.0.0.6 , 66.215.95.213            |
+|      VNW2  |          No           |           10.0.0.6             |
 
 ### Elk Configuration
 
