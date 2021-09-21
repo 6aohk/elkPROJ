@@ -33,7 +33,7 @@ The configuration details of each machine may be found below.
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | JUMP     | Ansible Gateway  | 10.0.0.6   | Linux (ubuntu 18.04)          |
-| Web1      |    DVWA Container      |         10.0.0.9   |       Linux (ubuntu 18.04)           |
+| WEB1      |    DVWA Container      |         10.0.0.9   |       Linux (ubuntu 18.04)           |
 | WEB2     |       DVWA Container   |    10.0.0.10        |          Linux (ubuntu 18.04)        |
 | VNW2     |       Elk Server   |      10.1.0.4      |           Linux (ubuntu 18.04)       |
 
@@ -50,9 +50,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | No              |    66.215.95.213 |
+|     WEB1     |      No                |        10.0.0.6              |
+|       WEB2   |        No             |          10.0.0.6              |
+|      VNW2  |          No           |           10.0.0.6 , 66.215.95.213            |
 
 ### Elk Configuration
 
