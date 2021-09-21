@@ -114,4 +114,4 @@ SSH into the Jump Box and follow the steps below:
 - Create new ansible-playbook (filebeat-playbook.yml) that properly installs the filebeat.yml files
 - Run filebeat-playbook.yml and go to ELK-Server to see if installation is successful. 
 - go to http://[your.VM.IP]:5601/app/kibana and click on verify data after going through system logs.
-
+![KABANA CHECK](img/KABANA.png)
