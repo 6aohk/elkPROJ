@@ -87,7 +87,9 @@ The playbook implements the following tasks:
         value: "262144"
         state: present
         reload: yes
-
+        
+Picture of Elk Running looks like this
+![ELK Running](img/ensureelkisrunning.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -101,10 +103,10 @@ Metricbeat is a lightweight shipper that you can install on your servers to peri
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
+SSH into the Jump Box and follow the steps below:
 - Copy the filebeat.yml file to /etc/ansible/roles
 - Update the configuration file with changes to the IP address for the Kibana/elasticsearch hosts
 - Create new ansible-playbook (filebeat-playbook.yml) that properly installs the filebeat.yml files
 - Run filebeat-playbook.yml and go to ELK-Server to see if installation is successful. 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
