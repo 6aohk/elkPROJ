@@ -33,9 +33,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump     | Gateway  | 10.0.0.1   | Linux (ubuntu 18.04)          |
-| Web1      |          |            |       Linux (ubuntu 18.04)           |
-| WEB2     |          |            |          Linux (ubuntu 18.04)        |
+| Jump     | Ansible Gateway  | 10.0.0.6   | Linux (ubuntu 18.04)          |
+| Web1      |    DVWA Container      |         10.0.0.9   |       Linux (ubuntu 18.04)           |
+| WEB2     |       DVWA Container   |    10.0.0.10        |          Linux (ubuntu 18.04)        |
 | VNW2     |       Elk Server   |      10.1.0.4      |           Linux (ubuntu 18.04)       |
 
 ### Access Policies
