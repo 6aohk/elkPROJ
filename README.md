@@ -53,7 +53,10 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows all the VMs to be configured at once through an ansible playbook.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows all the VMs to be configured at once through an ansible playbook. 
+After installing ansible to your vm, changing host configuration to match the IPs of the jumpbox before running the playbook is ideal.
+
+![ELK Running](img/editHOSTS.png)
 
 The playbook implements the following tasks:
 - Install docker
@@ -91,6 +94,8 @@ The playbook implements the following tasks:
 Picture of Elk Running looks like this
 ![ELK Running](img/ensureelkisrunning.PNG)
 
+
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 WEB1     10.0.0.9 and WEB2 10.0.0.10
@@ -108,5 +113,5 @@ SSH into the Jump Box and follow the steps below:
 - Update the configuration file with changes to the IP address for the Kibana/elasticsearch hosts
 - Create new ansible-playbook (filebeat-playbook.yml) that properly installs the filebeat.yml files
 - Run filebeat-playbook.yml and go to ELK-Server to see if installation is successful. 
-
+- go to http://[your.VM.IP]:5601/app/kibana and click on verify data after going through system logs.
 
